@@ -6,7 +6,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>GeoAR.js demo</title>
     <script src='https://aframe.io/releases/0.9.2/aframe.min.js'></script>
-    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://cors-anywhere.herokuapp.com/http://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
     <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     <script>
         THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
@@ -19,6 +19,8 @@
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
         <a-entity gltf-model="./assets/SciFiHelmet/glTF/SciFiHelmet2.gltf" rotation="0 0 0" gps-entity-place="longitude: -0.248319; latitude: 54.062228;"/>
+		<a-entity gltf-model="./assets/SciFiHelmet/glTF/SciFiHelmet2.gltf" rotation="0 0 0" gps-entity-place="longitude: -0.192220; latitude: 54.083061;"/>
+		<a-entity gltf-model="./assets/SciFiHelmet/glTF/SciFiHelmet2.gltf" rotation="0 0 0" gps-entity-place="longitude: -0.127758; latitude: 51.507351;"/>
         <a-camera gps-camera rotation-reader></a-camera>
 	</a-scene>
 </body>
