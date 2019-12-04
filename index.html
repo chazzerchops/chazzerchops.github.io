@@ -11,7 +11,7 @@
     <body style='margin : 0px; overflow: hidden;'>
 </script>
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
-        <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+        <a-scene embedded arjs= 'trackingMethod: best;sourceType: webcam; debugUIEnabled: false;'>
 
         <a-assets>
             <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
@@ -19,10 +19,10 @@
 
        
         <!--this is the marker element -->
-        <a-marker-camera type="pattern" url="./pattern-tree.patt">
+        <a-marker type="pattern" url="./pattern-tree.patt">
                 <a-entity gltf-model="./assets/SciFiHelmet/glTF/SciFiHelmet2.gltf">
             </a-entity>
-        </a-marker-camera>
+        </a-marker>
 
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
         <a-entity camera></a-entity>
