@@ -17,11 +17,9 @@
             <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
         </a-assets>
 
-        <a-marker type='barcode' value='7'>
-            <a-box position='0 0.5 0' color="yellow"></a-box>
-        </a-marker>
-
-        <a-marker preset="hiro">
+       
+        <!--this is the marker element -->
+        <a-marker type="pattern" url="pattern-tree.patt">
                 <a-entity gltf-model="./assets/SciFiHelmet/glTF/SciFiHelmet2.gltf">
             </a-entity>
         </a-marker>
@@ -29,9 +27,6 @@
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
         <a-entity camera></a-entity>
         </a-scene>
-		     <form action="http:www.millergraphics.com/" method="get" target="_blank">
-         <button type="submit">Click me</button>
-      </form>
     </body>
 </html>
  
