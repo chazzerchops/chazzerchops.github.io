@@ -11,7 +11,6 @@ d 1.000000
 illum 0
 map_Ka branch.png
 map_Kd branch.png
-map_d branch.png
 
 newmtl gold
 Ns 13.725490
